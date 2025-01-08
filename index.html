@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rivart</title>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"></script>
+    <!-- 스와이퍼 코드 -->
+
+ 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- 스와이퍼 cdn -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- 노토산스 폰트 -->
+
+   
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+    <!-- <script src="js/script.js"></script> -->
+    
+<script>
+  
+  $(document).ready(function(){
+
+            
+
+      $(".right_box>li").each(function(i){
+          $(this).attr({
+              "data-index": i
+          });
+      }).click(function(){
+
+
+
+      var num = $(this).attr("data-index");
+      console.log(num);
+
+    $(".con_box").css({
+        display: "none"
+    });
+
+    $(".con_box").eq(num).css({
+        display: "block"
+    });
+
+    $(".right_box>li").removeClass("color");
+    $(".right_box>li").eq(num).addClass("color");
+
+
+    $(".right_box>li").removeClass("active");
+    $(".right_box>li").eq(num).addClass("active");
+    
+});
+  });
+
+</script>
+
+<script>
+    $(document).ready(function(){
+      const swiper = new Swiper('.swiper1', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      speed: 1000,
+        autoplay: {
+        delay: 3000,
+        },
+  
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+
+      
+    });
+
+    });
+   
+  </script>
+
+  <script>
+        $(document).ready(function(){
+          var swiper = new Swiper(".swiper2", {
+          scrollbar: {
+            el: ".swiper-scrollbar",
+            hide: true,
+          },
+        });
+        });
+  </script>
+
+<script>
+      $(document).ready(function(){
+        var swiper = new Swiper(".swiper3", {
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: true,
+        },
+      });
+      });
+</script>
+
+<script>
+      $(document).ready(function(){
+        var swiper = new Swiper(".swiper6", {
+          slidesPerView: 5.5, 
+          spaceBetween: 30,
+
+          breakpoints : {
+
+            320 : {
+              slidesPerView : 3.5,
+              spaceBetween : 10,
+            },
+            550 : {
+              slidesPerView : 3.8,
+              spaceBetween : 10,
+            },
+
+            900: {
+              slidesPerView : 4.2,
+              spaceBetween : 20,
+            },
+
+
+            1200 : {
+              slidesPerView : 4.5,
+              spaceBetween : 20,
+            }
+
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      });
+</script>
+
+
+
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="logo">
+                <a href="#">
+                    <img src="img/livart.logo.png" alt="">
+                </a>
+            </div>
+            <ul class="gnb">
+                <a href="#"><li>홈</li></a>
+                <a href="#"><li>가구</li></a>
+                <a href="#"><li>리모델링</li></a>
+                <a href="#"><li>오피스</li></a>
+                <a href="#"><li>세계가구</li></a>
+                <a href="#"><li>공방</li></a>
+                <a href="#"><li>중고가구</li></a>
+
+            </ul>
+
+            <ul class="menu">
+                <li><a href="#"><img src="img/search.png" alt=""></a></li>
+                <li><a href="#"><img src="img/Icon akar-shopping-bag.png" alt=""></a></li>
+                <li><a href="#"><img src="img/mypage.png" alt=""></a></li>
+                <li><a href="#"><img src="img/ham.png" alt=""></a></li>
+            </ul>
+        </header>
+
+        <section class="section_1">
+          <div class="swiper swiper1">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="pc_img">
+                  <a href="#">
+                    <img src="img/section_1 img1.png" alt="">
+                  </a>
+                </div>
+                <div class="mobile_img">
+                  <a href="#">
+                    <img src="img/sec_1_mobile_img1.png" alt="">
+                  </a>
+                </div>
+                <div class="swiper_text">
+                  <h3>리바트몰 공방</h3>
+                  <p>전국 다양한 공방의 유니크한 제품을 소개합니다. <br>
+                    공방의 스토리와 클래스도 체험해 보세요.</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="pc_img">
+                  <a href="#">
+                    <img src="img/seciton_1 img2.png" alt="">
+                  </a>
+                </div>
+                <div class="mobile_img">
+                  <a href="#">
+                    <img src="img/sec_1_mobile_img2.png" alt="">
+                  </a>
+                </div>
+                <div class="swiper_text">
+                  <h3>거실의 분위기를 바꿔 줄 <br>
+                    세계가구 소파 모음전
+                  </h3>
+                  <p>포근하고 화사한 패브릭 소파부터 <br>
+                    가성비와 가심비를 모두 잡은 리클라이너까지</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="pc_img">
+                  <a href="#">
+                    <img src="img/seciton_1 img3.png" alt="">
+                  </a>
+                </div>
+                <div class="mobile_img">
+                  <a href="#">
+                    <img src="img/sec_1_mobile_img3.png" alt="">
+                  </a>
+                </div>
+                <div class="swiper_text">
+                  <h3>SURPRISE COUPON <br>
+                    베스트셀러 특별 혜택전
+                  </h3>
+                  <p>오늘의 깜짝 혜택을 확인해 보세요!</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="pc_img">
+                  <a href="#">
+                    <img src="img/seciton_1 img4.png" alt="">
+                  </a>
+                </div>
+                <div class="mobile_img">
+                  <a href="#">
+                    <img src="img/sec_1_mobile_img4.png" alt="">
+                  </a>
+                </div>
+                <div class="swiper_text">
+                  <h3>아르떼 세라믹 식탁</h3>
+                  <p>프리미엄 칸스톤 출시</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="pc_img">
+                  <a href="#">
+                    <img src="img/seciton_1 img5.png" alt="">
+                  </a>
+                </div>
+                <div class="mobile_img">
+                  <a href="#">
+                    <img src="img/sec_1_mobile_img5.png" alt="">
+                  </a>
+                </div>
+                <div class="swiper_text">
+                  <h3>오피스 퀵 구매 OPEN</h3>
+                  <p>빠르고 간편한 견적구매</p>
+                </div>
+              </div>
+
+
+
+
+             
+            </div>
+          
+            
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+           
+           
+          </div>
+    
+  
+        </section>
+
+        <!-- section_1 end -->
+
+        <section class="section_2">
+          <ul class="category">
+          <li>
+            <a href="#">
+              <img src="img/category1.png" alt="">
+              <div class="black_bg">
+              <p>가구</p>
+            </div>
+              
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/category2.png" alt="">
+              <div class="black_bg">
+              <p>리모델링&시공</p>
+            </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/category3.png" alt="">
+              <div class="black_bg">
+              <p>오피스</p>
+            </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/category4.png" alt="">
+              <div class="black_bg">
+              <p>세계가구</p>
+            </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/category5.png" alt="">
+              <div class="black_bg">
+              <p>공방</p>
+            </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/category6.png" alt="">
+              <div class="black_bg">
+              <p>중고가구</p>
+            </div>
+            </a>
+          </li>
+          </ul>
+
+          <div class="swiper swiper6">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+
+                <div class="category_slide">
+                  <a href="#">
+                    <img src="img/category1.png" alt="">
+                    <div class="mo_black_bg">
+                    <p>가구</p>
+                  </div>
+                    
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+
+                <div class="category_slide">
+                  <a href="#">
+                    <img src="img/category2.png" alt="">
+                    <div class="mo_black_bg">
+                    <p>리모델링&시공</p>
+                  </div>
+                    
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+
+                <div class="category_slide">
+                  <a href="#">
+                    <img src="img/category3.png" alt="">
+                    <div class="mo_black_bg">
+                    <p>오피스</p>
+                  </div>
+                    
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+
+                <div class="category_slide">
+                  <a href="#">
+                    <img src="img/category4.png" alt="">
+                    <div class="mo_black_bg">
+                    <p>세계가구</p>
+                  </div>
+                    
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+
+                <div class="category_slide">
+                  <a href="#">
+                    <img src="img/category5.png" alt="">
+                    <div class="mo_black_bg">
+                    <p>공방</p>
+                  </div>
+                    
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+
+                <div class="category_slide">
+                  <a href="#">
+                    <img src="img/category6.png" alt="">
+                    <div class="mo_black_bg">
+                    <p>중고가구</p>
+                  </div>
+                    
+                  </a>
+                </div>
+              </div>
+            
+             
+            </div>
+
+           
+           
+           
+          </div>
+            
+      
+          
+        </section>
+        <!-- section_2 end -->
+
+        <section class="section_3">
+          <div class="title">
+            <h3>BEST SELLER</h3>
+          </div>
+          <div class="container">
+          
+              <div class="sec_con">
+                <img src="img/sec_2_img1.png" alt="">
+                <div class="text_box">
+                 <div class="text_1">
+                  <p>몰리세 4인 패브릭 리클라이너 소파</p>
+                <ul class="color_box">
+                  <li></li>
+                  <li></li>
+                </ul>
+
+                
+                 </div>
+               <h3>1,764,100원</h3>
+              </div>
+                   
+                  
+                </div>
+
+                <div class="sec_con">
+                  <img src="img/sec_2_img2.png" alt="">
+                  <div class="text_box">
+                   <div class="text_2">
+                    <p>리르 천연면피 소가죽 소파 4인 컴팩트</p>
+                  <ul class="color_box">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+  
+                  
+                   </div>
+                 <h3>1,506,000원</h3>
+                </div>
+                     
+                    
+                  </div>
+
+                  <div class="sec_con">
+                    <img src="img/sec_2_img3.png" alt="">
+                    <div class="text_box">
+                     <div class="text_1">
+                      <p>에스테틱 호텔형 침대 프레임</p>
+                   
+                    </ul>
+    
+                    
+                     </div>
+                   <h3>912,000원 ~</h3>
+                  </div>
+                       
+                      
+                    </div>
+
+                    <div class="sec_con">
+                      <img src="img/sec_2_img4.png" alt="">
+                      <div class="text_box">
+                       <div class="text_1">
+                        <p>로넌 1200 책상세트</p>
+                  
+                      </ul>
+      
+                      
+                       </div>
+                     <h3>217,900원</h3>
+                    </div>
+                         
+                        
+                      </div>
+            
+            
+            
+                      
+                                </div>
+
+                                <div class="swiper swiper2">
+                                  <!-- Additional required wrapper -->
+                                  <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                      <div class="sec_slide_con">
+                                        <img src="img/sec_2_img1.png" alt="">
+                                        <div class="text_box">
+                                         <div class="text_1">
+                                          <p>몰리세 4인 패브릭 리클라이너 소파</p>
+                                        <ul class="color">
+                                          <li></li>
+                                          <li></li>
+                                        </ul>
+                        
+                                        
+                                         </div>
+                                       <h3>1,764,100원</h3>
+                                      </div>
+                                           
+                                          
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                      <div class="sec_slide_con">
+                                        <img src="img/sec_2_img2.png" alt="">
+                                        <div class="text_box">
+                                         <div class="text_2">
+                                          <p>리르 천연면피 소가죽 소파 4인 컴팩트</p>
+                                        <ul class="color">
+                                          <li></li>
+                                          <li></li>
+                                          <li></li>
+                                        </ul>
+                        
+                                        
+                                         </div>
+                                       <h3>1,506,000원</h3>
+                                      </div>
+                                           
+                                          
+                                        </div>
+                      
+                                    </div>
+                                   <div class="swiper-slide">
+                                    <div class="sec_slide_con">
+                                      <img src="img/sec_2_img3.png" alt="">
+                                      <div class="text_box">
+                                       <div class="text_1">
+                                        <p>에스테틱 호텔형 침대 프레임</p>
+                                     
+                                      </ul>
+                      
+                                      
+                                       </div>
+                                     <h3>912,000원 ~</h3>
+                                    </div>
+                                         
+                                        
+                                      </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                    <div class="sec_slide_con">
+                                      <img src="img/sec_2_img4.png" alt="">
+                                      <div class="text_box">
+                                       <div class="text_1">
+                                        <p>로넌 1200 책상세트</p>
+                                  
+                                      </ul>
+                      
+                                      
+                                       </div>
+                                     <h3>217,900원</h3>
+                                    </div>
+                                         
+                                        
+                                      </div>
+                    
+                                   </div>
+                    
+                                  
+                                  </div>
+                                  <div class="swiper-scrollbar"></div>
+                                  
+                                  
+                                  </div>
+            <div class="btn">
+              <a href="#">
+              <p>전체보기</p>
+            </a>
+            </div>
+
+
+            
+          
+             
+            
+          
+        </section>
+
+        <!-- section_3 end -->
+         <section class="section_4">
+          <div class="title">
+            <h3>시공사례</h3>
+            <p> 전체보기 </p>
+          </div>
+          <div class="container">
+            
+            
+              <div class="con_wrap">
+                <div class="con_box">
+              <img src="img/sec4img.png" alt="">
+              <div class="textbox">
+                <ul class="stylebox">
+                <li>#송파구</li>
+                <li>#거실</li>
+                <li>#30평대</li>
+              </ul>
+              <h3>50평으로 보이는 30평 신축 펜트하우스 인테리어</h3>
+              <p>리바트집테리어 잠실점</p>
+              </div>
+            </div>
+
+            <div class="con_box">
+              <img src="img/sec4img2.png" alt="">
+              <div class="textbox">
+                <ul class="stylebox">
+                <li>#도봉구</li>
+                <li>#거실</li>
+                <li>#30평대</li>
+              </ul>
+              <h3>선하고 밝은 빛을 발하며 번창하는 집 | 방학동 신동아 2단지 30PY</h3>
+              <p>리바트집테리어 잠실점</p>
+              </div>
+            </div>
+
+            <div class="con_box">
+              <img src="img/sec4im3.png" alt="">
+              <div class="textbox">
+                <ul class="stylebox">
+                <li>#송파구</li>
+                <li>#거실</li>
+                <li>#50평 이상</li>
+              </ul>
+              <h3>공간에 철학과 깊이를 담다 | 60PY 아파트 인테리어</h3>
+              <p>리바트집테리어 잠실점</p>
+              </div>
+            </div>
+
+            <div class="con_box">
+              <img src="img/sec4img4.png" alt="">
+              <div class="textbox">
+                <ul class="stylebox">
+                <li>#양천구</li>
+                <li>#거실</li>
+                <li>#10평대</li>
+              </ul>
+              <h3>선하고 밝은 빛을 발하며 번창하는 집 | 방학동 신동아 2단지 30PY</h3>
+              <p>리바트집테리어 잠실점</p>
+              </div>
+            </div>
+            </div>
+
+             
+          
+
+            <ul class="right_box">
+             <li class="color"> 
+                <div class="textbg">
+                  <div class="p">
+                  <p>#모던</p>
+                  <p>#빈티지</p>
+                </div>
+                  <h3>50평으로 보이는 30평 신축 펜트하우스 인테리어</h3>
+                  <div class="h">
+                  <h1>시공금액 : 2억</h1>
+                  <h1>주거형태 : 아파트</h1>
+                </div>
+                </div>
+              
+             </li>
+
+             <li> 
+              <div class="textbg">
+                <div class="p">
+                <p>#모던</p>
+                <p>#미니멀/심플</p>
+                <p>내추럴</p>
+              </div>
+                <h3>공간에 철학과 깊이를 담다</h3>
+                <div class="h">
+                <h1>시공금액 : 2억 5천만원</h1>
+                <h1>주거형태 : 아파트</h1>
+              </div>
+              </div>
+            
+           </li>
+
+           <li> 
+            <div class="textbg">
+              <div class="p">
+              <p>#모던</p>
+              <p>#클래식</p>
+              <p>#북유럽</p>
+            </div>
+              <h3>선하고 밝은 빛을 발하며 번창하는 집</h3>
+              <div class="h">
+              <h1>시공금액 : 8600만원</h1>
+              <h1>주거형태 : 아파트</h1>
+            </div>
+            </div>
+          
+         </li>
+
+         <li> 
+          <div class="textbg">
+            <div class="p">
+            <p>#모던</p>
+            <p>#내추럴</p>
+            <p></p>
+          </div>
+            <h3>세 가족이 행복을 그려나갈 18평의 따스한 보금자리</h3>
+            <div class="h">
+            <h1>시공금액 : 7500만원</h1>
+            <h1>주거형태 : 아파트</h1>
+          </div>
+          </div>
+        
+       </li>
+
+             
+              </ul>
+
+              <div class="mo_right_box">
+                
+                <div class="mo_textbg">
+                  <div class="p">
+                  <p>#모던</p>
+                  <p>#빈티지</p>
+                </div>
+                  <h3>50평으로 보이는 30평 신축 펜트하우스 인테리어</h3>
+                  <div class="h">
+                  <h1>시공금액 : 2억</h1>
+                  <h1>주거형태 : 아파트</h1>
+                </div>
+                </div>
+              </div>
+
+             
+              
+            </div>
+          
+         </section>
+         <!-- section_4 end -->
+          <section class="section_5">
+            <div class="title">
+              <h3>BEST REVIEW</h3>
+            </div>
+            <div class="container">
+             <div class="sec_con">
+                    <a href="#"><img src="img/sec_5_img1.png" alt=""></a>
+               
+                    <a href="#">
+                        <div class="sec_5_text">
+                        <div class="stars">★★★★★</div>
+                        <h3>나스파 책상 1년 사용하다 생각보다 실용적이지 않아서 이케아로 바꿀까하다가 리바트 꼼므 제품 추천이 많아서 폭풍 검색 후 구매하였는데 너무너무 좋아요! 크기, 내구성, 디자인 등 딱 좋아요! 적극추천합니다!!! </h3>
+                        <p>나*****수</p>
+                            <div class="bottom_box">
+                              
+                                <img src="img/sec_5_bottomimg1.png" alt="">
+                                <div class="bottom_inbox">
+                                <h5>꼼므 1200 아이책상의자세트(핑크,블루)  </h5>
+                                <p>156,400원</p>
+                            </div>
+                    
+                            </div>
+                    </div>
+                </a>
+            
+             </div>
+
+             <div class="sec_con">
+              <a href="#"><img src="img/sec_5_img2.png" alt=""></a>
+         
+              <a href="#">
+                  <div class="sec_5_text">
+                  <div class="stars">★★★★★</div>
+                  <h3>일단 기사님 시간 잘 맞춰주시고 너무 좋으신분 만나서 좋았어요 장도 너무 예쁘고 책도많이 들어가고 넘넘 마음에들어요 </h3>
+                  <p>바*****니</p>
+                      <div class="bottom_box">
+                        
+                          <img src="img/sec_5_bottomimg2.png" alt="">
+                          <div class="bottom_inbox">
+                          <h5>프렌즈아이 1800 슬라이딩전면책장  </h5>
+                          <p>282,200원</p>
+                      </div>
+              
+                      </div>
+              </div>
+          </a>
+      
+       </div>
+
+       <div class="sec_con">
+        <a href="#"><img src="img/sec_5_img3.png" alt=""></a>
+   
+        <a href="#">
+            <div class="sec_5_text">
+            <div class="stars">★★★★★</div>
+            <h3>탠딩 모니터가 있다보니 가로로 길쭉한 거실장은 안 맞고..그러다가 찾은 높은 거실장인데 실제 거실에 놓아보니 더 이쁘네요!! 크기가 신혼부부 사는 집 거실에 두기 딱인거 같아요~  </h3>
+            <p>이*주</p>
+                <div class="bottom_box">
+                  
+                    <img src="img/sec_5_bottomimg3.png" alt="">
+                    <div class="bottom_inbox">
+                    <h5>무드 모던 1800 거실장  </h5>
+                    <p>209,200원</p>
+                </div>
+        
+                </div>
+        </div>
+    </a>
+
+ </div>
+
+ <div class="sec_con">
+  <a href="#"><img src="img/sec_5_img4.png" alt=""></a>
+
+  <a href="#">
+      <div class="sec_5_text">
+      <div class="stars">★★★★★</div>
+      <h3>아기가 포크로 찍고, 수저로 찍고, 찍고 찍고 찍었는데도 기스 안났어요.
+        김치 계속 흘려도 물 안들었어요.
+        물감처럼 잘 안 지워지는거 묻으면 매직블럭으로 닦았더니 다 지워졌어요 </h3>
+      <p>g***********</p>
+          <div class="bottom_box">
+            
+              <img src="img/sec_5_bottomimg4.png" alt="">
+              <div class="bottom_inbox">
+              <h5>로티르 4인 원형식탁세트 의자2 </h5>
+              <p>370,000원~</p>
+          </div>
+  
+          </div>
+  </div>
+</a>
+
+</div>
+            </div>
+
+            <div class="swiper swiper3">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="sec_slide_con">
+                    <a href="#"><img src="img/sec_5_img1.png" alt=""></a>
+               
+                    <a href="#">
+                        <div class="sec_5_text">
+                        <div class="stars">★★★★★</div>
+                        <h3>나스파 책상 1년 사용하다 생각보다 실용적이지 않아서 이케아로 바꿀까하다가 리바트 꼼므 제품 추천이 많아서 폭풍 검색 후 구매하였는데 너무너무 좋아요! 크기, 내구성, 디자인 등 딱 좋아요! 적극추천합니다!!! </h3>
+                        <p>나*****수</p>
+                            <div class="bottom_box">
+                              
+                                <img src="img/sec_5_bottomimg1.png" alt="">
+                                <div class="bottom_inbox">
+                                <h5>꼼므 1200 아이책상의자세트(핑크,블루)  </h5>
+                                <p>156,400원</p>
+                            </div>
+                    
+                            </div>
+                    </div>
+                </a>
+            
+             </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="sec_slide_con">
+                    <a href="#"><img src="img/sec_5_img2.png" alt=""></a>
+               
+                    <a href="#">
+                        <div class="sec_5_text">
+                        <div class="stars">★★★★★</div>
+                        <h3>일단 기사님 시간 잘 맞춰주시고 너무 좋으신분 만나서 좋았어요 장도 너무 예쁘고 책도많이 들어가고 넘넘 마음에들어요 </h3>
+                        <p>바*****니</p>
+                            <div class="bottom_box">
+                              
+                                <img src="img/sec_5_bottomimg2.png" alt="">
+                                <div class="bottom_inbox">
+                                <h5>프렌즈아이 1800 슬라이딩전면책장  </h5>
+                                <p>282,200원</p>
+                            </div>
+                    
+                            </div>
+                    </div>
+                </a>
+            
+             </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="sec_slide_con">
+                    <a href="#"><img src="img/sec_5_img3.png" alt=""></a>
+               
+                    <a href="#">
+                        <div class="sec_5_text">
+                        <div class="stars">★★★★★</div>
+                        <h3>탠딩 모니터가 있다보니 가로로 길쭉한 거실장은 안 맞고..그러다가 찾은 높은 거실장인데 실제 거실에 놓아보니 더 이쁘네요!! 크기가 신혼부부 사는 집 거실에 두기 딱인거 같아요~  </h3>
+                        <p>이*주</p>
+                            <div class="bottom_box">
+                              
+                                <img src="img/sec_5_bottomimg3.png" alt="">
+                                <div class="bottom_inbox">
+                                <h5>무드 모던 1800 거실장  </h5>
+                                <p>209,200원</p>
+                            </div>
+                    
+                            </div>
+                    </div>
+                </a>
+            
+             </div>
+             
+                </div>
+                <div class="swiper-slide">
+                  <div class="sec_slide_con">
+                    <a href="#"><img src="img/sec_5_img4.png" alt=""></a>
+                  
+                    <a href="#">
+                        <div class="sec_5_text">
+                        <div class="stars">★★★★★</div>
+                        <h3>아기가 포크로 찍고, 수저로 찍고, 찍고 찍고 찍었는데도 기스 안났어요.
+                          김치 계속 흘려도 물 안들었어요.
+                          물감처럼 잘 안 지워지는거 묻으면 매직블럭으로 닦았더니 다 지워졌어요 </h3>
+                        <p>g***********</p>
+                            <div class="bottom_box">
+                              
+                                <img src="img/sec_5_bottomimg4.png" alt="">
+                                <div class="bottom_inbox">
+                                <h5>로티르 4인 원형식탁세트 의자2 </h5>
+                                <p>370,000원~</p>
+                            </div>
+                    
+                            </div>
+                    </div>
+                  </a>
+                  
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+           
+            
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </section>
+
+          <!-- section_5 end -->
+           
+          <section class="section_6">
+            <a href="#">
+            <div class="title">
+              <h3>브랜드 소개</h3>
+              <p>더보기</p>
+            </div>
+            <div class="container">
+       
+              <div class="text_container">
+                <div class="sec_6_text">
+                
+                  
+                <img src="img/rivart_logo2.png" alt="">
+                <h2>Life is Living Art, LIVART</h2>
+                <p>집에 대한 모든 것, 새로운 가치를 더합니다. <br>
+                토탈 인테리어 브랜드
+                  </p>
+                  <h1>제품보러가기</h1>
+                
+              
+              </div>
+            </div>
+              <div class="brand_bg">
+                <img src="img/brandimg.png" alt="">
+              </div>
+            
+            </div>
+          </a>
+        </section>
+
+        <!-- section_6 end -->
+         <section class="section_7">
+          <div class="adver_box">
+            <div class="img1">
+              <img src="img/sec_7_img1.png" alt="">
+            </div>
+            <div class="img2">
+              <img src="img/sec_7_img2.png" alt="">
+            </div>
+            
+          </div>
+
+          <div class="mobile_adver_box">
+            <div class="img1">
+              <img src="img/sec_7_mobile_img1.png" alt="">
+            </div>
+            <div class="img2">
+              <img src="img/sec_7_mobile_img2.png" alt="">
+            </div>
+            
+          </div>
+         </section>
+
+         <!-- section_7 end -->
+        <section class="section_8">
+          <div class="title">
+            <h3>INSTAGRAM</h3>
+            <h1>@hyundailivart_official</h1>
+          </div>
+          <ul class="insta">
+            <li>
+              <a href="#">
+                <img src="img/instaimg1.png" alt=""></a>
+              </li>
+              <li>
+              <a href="#">
+                <img src="img/instaimg2.png" alt=""></a>
+              </li>
+              <li>
+              <a href="#">
+                <img src="img/instaimg3.png" alt=""></a>
+              </li>
+              <li>
+              <a href="#">
+                <img src="img/instaimg4.png" alt=""></a>
+              </li>
+              <li>
+              <a href="#">
+                <img src="img/instaimg5.png" alt=""></a>
+              </li>
+            
+          </ul>
+        </section>
+
+        <!-- section_8 end -->
+         <footer>
+          <div class="footer_box">
+            <div class="footer_logo">
+              <a href="#">
+              <img src="img/livart.logo.png" alt="">
+            </a>
+            </div>
+            <ul class="footer_gnb">
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">개인정보 처리방침</a></li>
+              <li><a href="#">영상정보처리기기 운영/관리방침</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">경영이념</a></li>
+              <li><a href="#">투자정보</a></li>
+              <li><a href="#">인재채용</a></li>
+              <li><a href="#">제휴 및 대리점 개설안내</a> </li>
+            </ul>
+
+            <div class="info">
+              <ul class="info_in">
+                <li><a href="#">본사.경기도 용인시 남사읍 경기동로 316</a></li>
+                <li> <a href="#">T. 제휴/대리점 개설문의02-3480-8000</a></li>
+                <li> <a href="#">M. livartcs@hyundailivart.co.kr</a></li>
+              </ul>
+              <p><a href="#">개인정보관리책임자. 최재운</a></p>
+              <p><a href="#">사업자 등록번호.  135-81-32239</a></p>
+              
+
+            </div>
+
+            
+
+
+          </div>
+
+          <div class="right_footer">
+            <div class="sns">
+              <a href="#"><img src="img/Icon akar-facebook-fill.png" alt=""></a>
+              <a href="#"><img src="img/Icon akar-instagram-fill.png" alt=""></a>
+              <a href="#"><img src="img/Icon akar-youtube-fill.png" alt=""></a>
+              <a href="#"><img src="img/blog.png" alt=""></a>
+            </div>
+
+            <div class="familysite">
+              <a href="#">
+              <p>FAMILY SITE</p>
+              <p>▼</p>
+            </a>
+            </div>
+          </div>
+         </footer>
+    </div>
+  
+</body>
+</html>
